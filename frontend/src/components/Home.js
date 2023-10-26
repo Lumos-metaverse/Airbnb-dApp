@@ -51,9 +51,9 @@ const Home = () => {
       setWalletConnected(true)
 
 
-      if (chainId !== CHAIN_ID) {
+    if (chainId !== CHAIN_ID) {
       window.alert(`Please switch to the ${NETWORK_NAME} network!`);
-          throw new Error(`Please switch to the ${NETWORK_NAME} network`);
+        throw new Error(`Please switch to the ${NETWORK_NAME} network`);
       }
       setProvider(web3Provider);
   }, []);
